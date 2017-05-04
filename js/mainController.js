@@ -1,17 +1,11 @@
 
 "use strict";
          
-angular.module("noteApp", [])
+angular.module("notesApp", [])
   .controller('MainController', [function(){
-    console.log('MainCtrl has been created');
-    this.helloMessage = "Hello";
-    //this.byeMessage = "Bye";
-
-    this.changeMsg = function(){
-      this.helloMessage = "Nice One!!";
-    };
-
-    this.notes = [
+  
+    var self = this;
+    self.notes = [
       {label: "First Note", done: true, assignee: "Amar"},
       {label: "Second Note", done: true, assignee: "Akbar"},
       {label: "Third Note", done: true, assignee: "Anthony"},
@@ -19,7 +13,7 @@ angular.module("noteApp", [])
       {label: "Five Note", done: false},
     ];
 
-    this.getNoteClass = function(status) {
+    self.getNoteClass = function(status) {
       return {
         done: status,
         pending: !status

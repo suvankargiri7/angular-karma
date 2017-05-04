@@ -9,6 +9,7 @@
   "author": "sgiri@broadsoft.com",
   "license": "ISC",
   "dependencies": {
+    "jasmine-core": "^2.6.1",
     "karma": "^1.6.0",
     "karma-chrome-launcher": "^2.1.0",
     "karma-jasmine": "^1.1.0"

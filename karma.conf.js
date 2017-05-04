@@ -16,12 +16,14 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'js/*.js',
-      'test/*.js'
+      'test/*.spec.js',
     ],
 
 
     // list of files to exclude
     exclude: [
+        'js/bootstrap.min.js',
+        'js/jquery.min.js',
     ],
 
 
@@ -56,7 +58,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode

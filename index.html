@@ -1,0 +1,17 @@
+<html ng-app="notesApp">
+    <body ng-controller="MainController as ctrl">
+        <table>    
+            <tr ng-repeat-start="note in ctrl.notes">
+                {{note}}     
+                <td>{{note.label}}</td>    
+            </tr>    
+            <tr ng-repeat-end>      
+                <td>Done: {{note.done}}</td>    
+            </tr>  
+        </table>
+        <script src="js/angular.min.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mainController.js"></script> 
+    </body>
+</html>
